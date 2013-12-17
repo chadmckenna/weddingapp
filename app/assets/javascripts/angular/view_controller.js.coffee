@@ -1,7 +1,7 @@
 app = angular.module('viewControllers', [])
 
 app.controller 'ViewCtrl', ($scope, $element) ->
-  $scope.pics = [{src: '/assets/20445_Edit.jpg', mirror: false, visible: false}, {src: '/assets/20414.jpg', mirror: true, visible: false}, {src: '/assets/20368.jpg', mirror: true, visible: false}, {src: '/assets/20613.jpg', mirror: true, visible: false}]
+  $scope.pics = [{src: '/assets/20445_Edit_sm.jpg', mirror: false, visible: false}, {src: '/assets/20414_sm.jpg', mirror: true, visible: false}, {src: '/assets/20368_sm.jpg', mirror: true, visible: false}, {src: '/assets/20613_sm.jpg', mirror: true, visible: false}]
 
   _rand = ->
     Math.floor(Math.random()*$scope.pics.length)
