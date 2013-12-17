@@ -1,0 +1,85 @@
+.app{'ng-app' => 'viewApp', 'ng-controller' => 'ViewCtrl'}
+  %img.animate-show{'ng-src' => '{{pic.src}}', 'ng-class' => "{true: 'mirror', false: ''}[pic.mirror]", 'ng-repeat' => 'pic in pics', 'ng-show' => 'pic.visible'}
+
+  .app-body
+    .header.right.clear
+      Chad & Hilary Are Getting Married!
+      %span.glyphicon.glyphicon-heart.smaller
+
+    .info-box.right.clear
+      .small-header.right.clear
+        June 7th, 2014
+        %span.glyphicon.glyphicon-calendar
+
+      .small-header.right.clear
+        5:30pm @ Fossil Trace Golf Course
+        %span.glyphicon.glyphicon-time
+
+      .small-header.right.clear
+        Golden, Colorado
+        %span.glyphicon.glyphicon-map-marker
+
+    .info-box.right.clear
+      %a.small-header.gray.right.clear{href: '#', 'data-toggle' => "modal", 'data-target' => "#registry"} Registry
+
+      %a.small-header.gray.right.clear{href: '#', 'data-toggle' => "modal", 'data-target' => "#directions"} Directions
+
+      %a.small-header.gray.right.clear{href: '#', 'data-toggle' => "modal", 'data-target' => "#info"} Hotel Information
+
+      %a.small-header.gray.right.clear{href: '#', 'data-toggle' => "modal", 'data-target' => "#story"} Our Story
+
+#registry.modal.fade
+  .modal-dialog
+    .modal-content
+      .modal-header
+        %button{type: "button", class: "close", 'data-dismiss' => "modal", 'aria-hidden' => "true"} &times;
+        %h4.modal-title Our Registry
+      .modal-body
+        %p You can visit our registries at these wonderful websites!
+        %p
+          %a{href: '#'} http://rei.com
+        %p
+          %a{href: '#'} http://roguefitness.com
+        %p
+          %a{href: '#'} http://crateandbarrel.com
+      .modal-footer
+        %button.btn.btn-default{type: "button", 'data-dismiss' => "modal"} Close
+
+#directions.modal.fade
+  .modal-dialog
+    .modal-content
+      .modal-header
+        %button{type: "button", class: "close", 'data-dismiss' => "modal", 'aria-hidden' => "true"} &times;
+        %h4.modal-title Directions
+      .modal-body
+        %iframe{width: "425", height: "350", frameborder: "0", scrolling: "no", marginheight: "0", marginwidth: "0", src: "https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Fossil+Trace+Golf+Club,+Illinois+Street,+Denver,+CO&amp;aq=0&amp;oq=Fossil+Trace+Go&amp;sll=29.817178,-95.401291&amp;sspn=1.100929,2.113495&amp;t=h&amp;ie=UTF8&amp;hq=&amp;hnear=&amp;iwloc=A&amp;ll=39.737412,-105.211704&amp;spn=0.006295,0.006295&amp;output=embed"}
+        %br
+        %small
+          %a{href: "https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Fossil+Trace+Golf+Club,+Illinois+Street,+Denver,+CO&amp;aq=0&amp;oq=Fossil+Trace+Go&amp;sll=29.817178,-95.401291&amp;sspn=1.100929,2.113495&amp;t=h&amp;ie=UTF8&amp;hq=&amp;hnear=&amp;iwloc=A&amp;ll=39.737412,-105.211704&amp;spn=0.006295,0.006295", style: "color:#0000FF;text-align:left"}
+            View Larger Map
+      .modal-footer
+        %button.btn.btn-default{type: "button", 'data-dismiss' => "modal"} Close
+
+#info.modal.fade
+  .modal-dialog
+    .modal-content
+      .modal-header
+        %button{type: "button", class: "close", 'data-dismiss' => "modal", 'aria-hidden' => "true"} &times;
+        %h4.modal-title Info
+      .modal-body
+        %p
+          %a{href: 'http://www.thegoldenhotel.com/accommodations'} Golden Hotel in Downtown Golden
+      .modal-footer
+        %button.btn.btn-default{type: "button", 'data-dismiss' => "modal"} Close
+
+#story.modal.fade
+  .modal-dialog
+    .modal-content
+      .modal-header
+        %button{type: "button", class: "close", 'data-dismiss' => "modal", 'aria-hidden' => "true"} &times;
+        %h4.modal-title Our Story
+      .modal-body
+        %p
+          This is where our story goes!
+      .modal-footer
+        %button.btn.btn-default{type: "button", 'data-dismiss' => "modal"} Close

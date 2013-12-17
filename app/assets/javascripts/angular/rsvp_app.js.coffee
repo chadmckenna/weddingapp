@@ -1,0 +1,1 @@
+angular.module('rsvpApp', ['rsvpDirectives', 'rsvpControllers', 'rsvpServices'])
