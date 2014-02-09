@@ -35,7 +35,13 @@
         %button{type: "button", class: "close", 'data-dismiss' => "modal", 'aria-hidden' => "true"} &times;
         %h4.modal-title Our Registry
       .modal-body
-        %p Coming soon!
+        %p We are registered at the following stores:
+        %p
+          %a{href: 'http://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?pwsToken=&eventType=Wedding&registryId=10868534&pwsurl='} Bed, Bath & Beyond Registry 
+        %p
+          %a{href: 'http://www.crateandbarrel.com/Gift-Registry/Hilary-Stamp-and-Chad-Mckenna/r5139709'} Crate & Barrel Registry
+        %p
+          %a{href: 'http://www.rei.com'} REI Registry
       .modal-footer
         %button.btn.btn-default{type: "button", 'data-dismiss' => "modal"} Close
 
@@ -45,8 +51,15 @@
       .modal-header
         %button{type: "button", class: "close", 'data-dismiss' => "modal", 'aria-hidden' => "true"} &times;
         %h4.modal-title Directions
-      .modal-body{style: 'height: 400px'}
-        #fossil-trace-map{style: "width: 558px; height: 100%"}
+      .modal-body{style: 'height: 500px'}
+        %p
+          %b
+            Three Tomatoes Bar and Grill at Fossil Trace
+          %br
+          3050 Illinois St.
+          %br
+          Golden, CO 80401
+        #fossil-trace-map{style: "width: 558px; height: 400px"}
       .modal-footer
         %button.btn.btn-default{type: "button", 'data-dismiss' => "modal"} Close
 
@@ -55,10 +68,15 @@
     .modal-content
       .modal-header
         %button{type: "button", class: "close", 'data-dismiss' => "modal", 'aria-hidden' => "true"} &times;
-        %h4.modal-title Info
+        %h4.modal-title Hotel Information
       .modal-body
         %p
+          %b
+            Hotels located in Downtown Golden
+        %p
           %a{href: 'http://www.thegoldenhotel.com/accommodations'} Golden Hotel in Downtown Golden
+        %p
+          %a{href: 'http://www.tablemountaininn.com/'} Table Mountain Inn in Downtown Golden
       .modal-footer
         %button.btn.btn-default{type: "button", 'data-dismiss' => "modal"} Close
 
