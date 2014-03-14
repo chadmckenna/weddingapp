@@ -26,7 +26,7 @@
 
       %a.small-header.gray.right.clear{href: '#', 'data-toggle' => "modal", 'data-target' => "#info"} Hotel Information
 
-      %a.small-header.gray.right.clear{href: '#', 'data-toggle' => "modal", 'data-target' => "#story"} Our Story
+      / %a.small-header.gray.right.clear{href: '#', 'data-toggle' => "modal", 'data-target' => "#story"} Our Story
 
 #registry.modal.fade
   .modal-dialog
@@ -45,13 +45,22 @@
           %a{href: 'http://www.rei.com/GiftRegistryDetails/GR52098581'} REI Registry
         %p
           Since we are travelling, we would greatly appreciate if you would mail any gifts to the following address:
-          %br
-          %b
-            Mr. and Mrs. Chad McKenna
-            %br
-            4703 Braeburn Drive
-            %br
-            Bellaire, TX 77401
+          %p{style: 'padding-left: 20px'}          
+            %b
+              Mr. and Mrs. Chad McKenna
+              %br
+              4703 Braeburn Drive
+              %br
+              Bellaire, TX 77401
+        %hr
+        %h4
+          You can also donate on our behalf
+        %p
+          The following are two organizations that we love and support: 
+        %p
+          %a{href: 'http://agapewebsite.org/get-involved/give/'} Agape International
+        %p
+          %a{href: 'https://www.water.cc/donate'} Living Water International
       .modal-footer
         %button.btn.btn-default{type: "button", 'data-dismiss' => "modal"} Close
 
