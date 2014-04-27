@@ -14,6 +14,8 @@ app.controller 'ViewCtrl', ['$scope', '$element',
 
     $scope.setPic()
 
+    $scope.toGo = -> Math.floor((new Date('06/07/2014 17:00:00') - new Date())/(1000*3600*24))
+
     setInterval ->
         $scope.setPic()
         $scope.$apply()
